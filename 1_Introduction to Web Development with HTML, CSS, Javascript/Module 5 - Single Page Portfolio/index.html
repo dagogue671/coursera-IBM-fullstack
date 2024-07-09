@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>David Gogue - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          David Gogue
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          hafa.adai@davidgogue.info
+          </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu">Skills</a>
+          <a class="topmenu">Projects</a>
+          <a class="topmenu">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div id="penguin">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenRyd2hkNHF5Ymh0b21pZWFycWZ4cHY5aGJydzcyYXE0N2hwZGozbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2IudUHdI075HL02Pkk/giphy.webp" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm David Gogue! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 2 years of experience in both application and presentation layers.
+            I have many programming projects and experience because I'm a cool gangster and I like to dance.  
+            
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/>
+          <h6>CSS</h6>
+          <p>3 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/react.png"/>
+          <h6>React</h6>
+          <p>3 years experience</p>
+        </div> 
+
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h6>Java</h6>
+          <p>3 years experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="https://i.gifer.com/7Uz.gif"/>
+          <h6>Dance</h6>
+          <p>No Experience Necessary</p>
+        </div> 
+
+      </div>
+
+      
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Game Development</h3>
+            <ul>
+              <li>Made a interactive Game based on my Resume. Can be found at itch.io</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>System Administrator</h3>
+            <ul>
+              <li>I'm pretty good with computers</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Dancing</h3>
+            <ul>
+              <li>One day just got up and felt like dancing.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          This guy was totally tubular. He for reals dances to expectations. 
+          One time, he got up on the floor, and he danced like he's never danced before
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          This guy's foot is always loose. Ever since moving to the small town of Bomont to live with his aunt
+          and uncle. He and Reverends Shaw's daughter Ariel, they kick up the Sunday shoes because they cut Footloose.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          He's had the time of his life, and I'm pretty sure he's never felt that way before. This is true.
+          I owe it all to you, David. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Righteous bruh. Thanks for leaving a recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
